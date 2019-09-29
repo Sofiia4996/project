@@ -1,0 +1,29 @@
+.img{
+    width: 200px;
+    margin-left: 550px;
+}
+.type{
+    color:#000000;
+    font-size: 40px;
+    margin-left: 250px;
+}
+.collection{
+    font-size: 80px;
+}
+.end{
+    background: black;
+    height: 200px;
+}
+.logo{
+   width: 50px;
+   height: 35px;
+}
+.tools{
+     width: 40px;
+   height: 30px;
+
+}
+.photo{
+    width:1300px;
+    margin-left: 20px;
+}
