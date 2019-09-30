@@ -7,8 +7,20 @@
     font-size: 40px;
     margin-left: 250px;
 }
+.bag{
+    color:#000000;
+    font-size: 40px;
+}
+.signin{
+    color:#000000;
+    font-size: 40px; 
+}
+.video{
+    margin-left: 20px;
+}
 .collection{
     font-size: 80px;
+    margin-left: 200px;
 }
 .end{
     background: black;
@@ -16,7 +28,8 @@
 }
 .logo{
    width: 50px;
-   height: 35px;
+   height: 40px;
+   margin-left: 150px;
 }
 .tools{
      width: 40px;
