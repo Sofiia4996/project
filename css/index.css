@@ -1,11 +1,88 @@
-.img{
-    width: 200px;
-    margin-left: 550px;
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+:root {
+    --accent-color: rgb(153, 11, 11);
+    --main-color: black;
+    font-family: 'Dancing Script', cursive;;
+    scroll-behavior: smooth;
 }
-.type{
-    color:#000000;
+body {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.tools{
+
+    width: 30px;
+    margin-top: 10px;
+}
+ .logo{
+    width: 200px;
+    display:block;
+    margin:0 auto;
+ }
+main nav .menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
     font-size: 40px;
-    margin-left: 250px;
+}
+main nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+maine nav .menu a:hover {
+    border: 1px solid var(--accent-color);
+}
+section .video{
+    align-content: center;
+}
+ section .collection{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+}
+div .photo-list{
+     display: block;
+
+}
+@media (min-width: 400px) {
+    .photo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        width: 600px;
+        }
+    }
+@media (min-width: 800px){
+ .photo {
+        grid-template-columns: 1fr 1fr;
+         }
+    }
+    @media (min-width: 1200px){
+ .photo {
+        grid-template-columns: 1fr 1fr 1fr;
+         }
+    }
+ .end{
+    background: black;
+    height: 200px;
+}
+ .icon{
+    width: 40px;
+    margin-top: 75px;
+    align-content: center;
+      text-decoration: none;
+    text-transform: uppercase;
+
+
+
 }
 .bag{
     color:#000000;
@@ -13,30 +90,9 @@
 }
 .signin{
     color:#000000;
-    font-size: 40px; 
+    font-size: 40px;
 }
-.video{
-    margin-left: 20px;
-}
-.collection{
-    font-size: 80px;
-    margin-left: 200px;
-}
-.end{
-    background: black;
-    height: 200px;
-}
-.logo{
-   width: 50px;
-   height: 40px;
-   margin-left: 150px;
-}
-.tools{
-     width: 40px;
-   height: 30px;
 
-}
-.photo{
-    width:1300px;
-    margin-left: 20px;
-}
+
+
+
