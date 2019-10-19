@@ -11,10 +11,14 @@
 <body>
 <header>
         <figure class="toolsstyle">
-            <img src="img/search.png" alt="search" class="tools">
-            <a href="shoppingbag.html"> <img src="img/bag.png" alt="bag" class="tools"></a>
-            <a href="login.html"><img src="img/log.png" alt="log" class="tools"></a>
-            <img src="img/lan.png" alt="lan" class="tools">
+                <a class="nav-link" href="#cartModal" data-toggle="modal">
+                <i class="fas fa-shopping-cart"></i>
+                <img src="img/bag.png" alt="bag" class="tools"></a>
+
+
+
+                 <a href="login.html"><img src="img/log.png" alt="log" class="tools"></a>
+
         </figure>
     </header>
    <main>
@@ -22,98 +26,16 @@
                  <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="women.html">Women</a></li>
-                    <li><a href="man.html">Man</a></li>
+                    <li><a href="man.html">Men</a></li>
                 </ul>
             </nav>
             <div><img src="img/H&M.png" alt="H&M" class="logo"></div>
         <hr>
     </main>
     <br>
-     <div class="product-list row">
-        <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
-           <img src = "img/dress.jpg" alt="dress"  class="card-img-top" class="photostyle">
-               <div class="card-body">
-                     <h3 class="card-title">Shirt Dress with Tie Belt
-                        <br> $ 29.99</h3>
-                    <p class="card-text">Calf-length dress in soft, gently draped viscose twill. Collar,
-                     buttons at front, yoke at back, and removable tie belt at waist. Long sleeves with buttons at cuffs. Unlined.</p>
-                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalProductInfo">Info</a>
-            </div>
-        </div>
-    </div>
 
+     <div class="row products-container">
 
-        <article>
-             <img src = "img/dress2.jpg" alt="dress2" class="photostyle">
-                    <h3>Patterned Dress
-                    <br>$ 34.99</h3>
-                <div class="button-placing">
-                     <button class="button ">Buy</button>
-                </div>
-
-        </article>
-        <article>
-            <img src = "img/jacket.jpg" alt="jacket"class="photostyle">
-                    <h3>Double-breasted Belted Jacket
-                    <br>$ 59.99</h3>
-                <div class="button-placing">
-                     <button class="button ">Buy</button>
-                </div>
-
-        </article>
-        <article>
-             <img src = "img/sweater.jpg" alt="sweater" class="photostyle">
-                    <h3>Ribbed Turtleneck Sweater
-                    <br>$ 24.99</h3>
-                <div class="button-placing">
-                     <button class="button ">Buy</button>
-                </div>
-
-        </article>
-        <article>
-            <img src = "img/jacket2.jpg" alt="jacket2" class="photostyle">
-                    <h3>Checked Jacket
-                    <br>$ 49.99</h3>
-                <div class="button-placing">
-                     <button class="button ">Buy</button>
-                </div>
-
-        </article>
-        <article>
-            <img src = "img/leggins.jpg" alt="leggins" class="photostyle">
-                    <h3>Leggings with High Waist
-                    <br>$ 17.99</h3>
-                <div class="button-placing">
-                     <button class="button ">Buy</button>
-                </div>
-
-        </article>
-        <article>
-            <img src = "img/skirt.jpg" alt="skirt" class="photostyle">
-                    <h3>Pleated Skirt
-                    <br>$ 49.99</h3>
-                <div class="button-placing">
-                     <button class="button ">Buy</button>
-                </div>
-
-        </article>
-        <article>
-             <img src = "img/sweater3.jpg" alt="sweater3" class="photostyle">
-                    <h3>Cashmere Sweater
-                    <br>$ 149.00</h3>
-                <div class="button-placing">
-                     <button class="button ">Buy</button>
-                </div>
-
-        </article>
-        <article>
-             <img src = "img/sweater2.jpg" alt="sweater2" class="photostyle">
-                    <h3>Knit Turtleneck Sweater
-                    <br>$ 24.99</h3>
-                <div class="button-placing">
-                     <button class="button ">Buy</button>
-                </div>
-        </article>
     </div>
 
       <nav class="end">
@@ -136,8 +58,67 @@
 
             </figure>
     </nav>
+
+ <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+            <button type="button" class="close" class="btn btn-dark" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <img class="card-img-top" src="" alt="">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            <button class="btn btn-dark"  data-id="id">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="cart-product-list-container"></div>
+            <hr>
+            <div class="container">
+              <form>
+                <div class="form-group row">
+                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                  <input class="form-control col-8" type="text" id="client-name" required>
+                </div>
+                <div class="form-group row">
+                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                  <input class="form-control col-8" type="email" id="client-email" required>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            <button class="btn btn-dark"">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script defer src="js/cart.js"></script>
+<script defer src="js/product-list.js"></script>
+<script defer src="js/index.js"></script>
 </body>
 </html>

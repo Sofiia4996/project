@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "title": "Shirt Dress with Tie Belt",
+        "image": "dress.jpg",
+        "description": "Calf-length dress in soft, gently draped viscose twill. Collar, buttons at front, yoke at back, and removable tie belt at waist. Long sleeves with buttons at cuffs. Unlined",
+        "price": 29.99
+    },
+    {
+        "id": "2",
+        "title": "Patterned Dress",
+        "image": "dress2.jpg",
+        "description": "Calf-length, straight-cut dress in woven, crêped fabric. Round neckline, opening at back of neck with covered button, and long sleeves with covered button at cuffs. Gathered seam at waist and skirt with ruffle at hem. Unlined.",
+        "price": 34.99
+    }
+]
