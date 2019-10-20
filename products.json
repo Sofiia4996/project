@@ -12,5 +12,47 @@
         "image": "dress2.jpg",
         "description": "Calf-length, straight-cut dress in woven, crêped fabric. Round neckline, opening at back of neck with covered button, and long sleeves with covered button at cuffs. Gathered seam at waist and skirt with ruffle at hem. Unlined.",
         "price": 34.99
+    },
+    {
+        "id": "3",
+        "title": "Pleated Skirt",
+        "image": "skirt.jpg",
+        "description": "Wide, calf-length skirt in pleated faux leather. High waist with concealed zip and covered snap fastener at one side. Unlined.",
+        "price": 49.99
+    },
+    {
+        "id": "4",
+        "title": "Ribbed Turtleneck Sweater",
+        "image": "sweater.jpg",
+        "description": "Shorter turtleneck sweater in a rib knit with wool content. Dropped shoulders, long sleeves, and rolled edges at collar, cuffs, and hem.",
+        "price": 24.99
+    },
+    {
+        "id": "5",
+        "title": "Checked Jacket",
+        "image": "jacket2.jpg",
+        "description": "Shorter turtleneck sweater in a rib knit with wool content. Dropped shoulders, long sleeves, and rolled edges at collar, cuffs, and hem.",
+        "price": 49.99
+    },
+     {
+        "id": "6",
+        "title": "Knit Turtleneck Sweater",
+        "image": "sweater2.jpg",
+        "description": "Sweater in a soft rib knit with wool content. Turtleneck, heavily dropped shoulders, and long, wide sleeves.",
+        "price": 49.99
+    },
+    {
+        "id": "7",
+        "title": "Double-breasted Belted Jacket",
+        "image": "jacket.jpg",
+        "description": "Fitted, double-breasted jacket in woven fabric with a brushed finish. Pointed lapels, welt front pockets. and long sleeves with decorative buttons at cuffs.Vent at back. Lined.",
+        "price": 59.99
+    },
+    {
+        "id": "8",
+        "title": "Leggings with High Waist",
+        "image": "leggins.jpg",
+        "description": "Leggings in soft jersey made from a viscose blend. High waist, elasticized waistband, and zip at hems.",
+        "price": 17.99
     }
 ]

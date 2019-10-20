@@ -13,9 +13,8 @@ body {
 }
 .toolsstyle{
     display: flex;
-    align-content: flex-end;
     justify-content:flex-end ;
-
+    margin-right: 50px;
 }
 .tools{
     width: 25px;
@@ -26,7 +25,6 @@ body {
     display:block;
     margin:0 auto;
  }
-
 main nav .menu{
     display: flex;
     justify-content: space-around;
@@ -101,9 +99,6 @@ section .video{
 .button-placing {
     display: flex;
 }
-
-
-
  *{box-sizing: border-box}
 .container {
   padding: 50px;
@@ -116,7 +111,6 @@ input[type=text], input[type=password] {
   border: none;
   background: #f1f1f1;
 }
-
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
@@ -134,7 +128,6 @@ hr {
   width: 100%;
   opacity: 0.9;
 }
-
 .registerbtn:hover {
   opacity:1;
 }
@@ -155,5 +148,4 @@ h1{
 }
 .btn {
     padding: 0.75rem 0.7rem;
-
 }

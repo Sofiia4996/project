@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>H&M</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
         <figure class="toolsstyle">
-            <img src="img/search.png" alt="search" class="tools">
-            <a href="shoppingbag.html"> <img src="img/bag.png" alt="bag" class="tools"></a>
-            <a href="login.html"><img src="img/log.png" alt="log" class="tools"></a>
-            <img src="img/lan.png" alt="lan" class="tools">
+            <div class="row products-container">
+                <a href="#" data-toggle="modal" data-target="#modalProductInfo">
+                    <img src="img/log.png" alt="log" class="tools">
+                </a>
+            </div>
         </figure>
     </header>
-     <br>
+    <br>
     <main>
-         <div><img src="img/H&M.png" alt="H&M" class="logo"></div>
-            <nav>
-                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="women.html">Women</a></li>
-                    <li><a href="man.html">Men</a></li>
-                </ul>
-            </nav>
+        <div><img src="img/H&M.png" alt="H&M" class="logo"></div>
+        <br>
+        <br>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="man.html">Men</a></li>
+            </ul>
+        </nav>
         <hr>
     </main>
 
     <section>
-            <video src="video/obzor.mp4" width="1300" controls class="video">
+        <video src="video/obzor.mp4" width="1300" controls class="video">
             <source src="obzor.mp4" type="video/mp4">
             <source src="obzor.ogg" type="video/ogg">
-           <h2> Your browser does not support the video tag.</h2>
-            </video>
+            <h2> Your browser does not support the video tag.</h2>
+        </video>
     </section>
 
     <section>
-            <h1 class="collection"><i>CONSCIOUS COLLECTION</i></h1>
+        <h1 class="collection"><i>CONSCIOUS COLLECTION</i></h1>
     </section>
     <div>
         <article class="photo">
             <img src="img/4.jpg" alt="suit" class="photostyle">
-            <img src="img/5.jpg" alt="sweater" class="photostyle" >
+            <img src="img/5.jpg" alt="sweater" class="photostyle">
             <img src="img/2.jpg" alt="cap" class="photostyle">
             <img src="img/3.jpg" alt="dress" class="photostyle">
             <img src="img/6.jpg" alt="jacket" class="photostyle">
@@ -52,24 +58,57 @@
     </div>
 
     <nav class="end">
-            <figure  class="position">
-                <a href="https://www.facebook.com/hmpolskahm/?brand_redir=1500573333514248">
-                        <img src="img/face1.png" alt="facebook" class="icon" >
-                </a>
-                <a href="https://twitter.com/hmusa">
-                    <img src="img/twi.jpg" alt="twitter" class="icon">
-                </a>
-                <a href="https://www.instagram.com/hm/">
-                    <img src="img/insta1.png" alt="instagram" class="icon">
-                </a>
-                <a href="https://www.youtube.com/user/hennesandmauritz">
-                    <img src="img/you.png" alt="youtube" class="icon">
-                </a>
-                <a href="https://www.pinterest.com/hm/?autologin=true">
-                    <img src="img/pi.png" alt="pinterest" class="icon">
-                </a>
+        <figure class="position">
+            <a href="https://www.facebook.com/hmpolskahm/?brand_redir=1500573333514248">
+                <img src="img/face1.png" alt="facebook" class="icon">
+            </a>
+            <a href="https://twitter.com/hmusa">
+                <img src="img/twi.jpg" alt="twitter" class="icon">
+            </a>
+            <a href="https://www.instagram.com/hm/">
+                <img src="img/insta1.png" alt="instagram" class="icon">
+            </a>
+            <a href="https://www.youtube.com/user/hennesandmauritz">
+                <img src="img/you.png" alt="youtube" class="icon">
+            </a>
+            <a href="https://www.pinterest.com/hm/?autologin=true">
+                <img src="img/pi.png" alt="pinterest" class="icon">
+            </a>
 
-            </figure>
+        </figure>
     </nav>
+    <div class="modal fade" id="modalProductInfo" tabindex="-1" role="dialog" aria-labelledby="modalProductInfoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProductInfoTitle"><b>Sign in</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="cart-product-list-container"></div>
+                    <hr>
+                    <div class="container">
+                        <form method="POST" action="https://formspree.io/sofochka4996@ukr.net">
+                            <div class="form-group row">
+
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                <button type="submit" class="registerbtn">Sign in</button>
+                                <div class="container signin">
+                                    <p>Don't have an account ? <a href="login.html">Registration</a>.</p>
+                                </div>
+
+                        </form>
+                        </div>
+
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 </html>

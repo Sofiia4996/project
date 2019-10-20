@@ -1,77 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>H&M</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-<header>
+    <header>
         <figure class="toolsstyle">
-            <img src="img/search.png" alt="search" class="tools">
-            <a href="shoppingbag.html"> <img src="img/bag.png" alt="bag" class="tools"></a>
-            <a href="login.html"><img src="img/log.png" alt="log" class="tools"></a>
-            <img src="img/lan.png" alt="lan" class="tools">
+            <a class="nav-link" href="#cartModal" data-toggle="modal">
+                <i class="fas fa-shopping-cart"></i>
+                <img src="img/bag.png" alt="bag" class="tools">
+                <span id="cart-badge" class="badge badge-light"></span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#modalProductInfo">
+                <img src="img/log.png" alt="log" class="tools">
+            </a>
         </figure>
     </header>
-   <main>
-            <nav>
-                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="women.html">Women</a></li>
-                    <li><a href="man.html">Men</a></li>
-                </ul>
-            </nav>
-            <div><img src="img/H&M.png" alt="H&M" class="logo"></div>
-            <br>
+    <main>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="man.html">Men</a></li>
+            </ul>
+        </nav>
+        <div><img src="img/H&M.png" alt="H&M" class="logo"></div>
+        <br>
         <hr>
     </main>
     <form method="POST" action="https://formspree.io/sofochka4996@ukr.net">
         <div class="container">
             <h1>Registration</h1>
-                <p>Please fill in this form to create an account.</p>
+            <p>Please fill in this form to create an account.</p>
             <hr>
-                <label for="name"><b>Name</b></label>
-                    <input type="text" placeholder="Enter Name" name="name" required>
-                <label for="surname"><b>Surname</b></label>
-                    <input type="text" placeholder="Enter Surname" name="surname" required>
-                <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-                <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-             <hr>
-                 <button type="submit" class="registerbtn">Register</button>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+            <label for="surname"><b>Surname</b></label>
+            <input type="text" placeholder="Enter Surname" name="surname" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <hr>
+            <button type="submit" class="registerbtn">Register</button>
         </div>
-
-        <div class="container signin">
-            <p>Already have an account? <a href="signin.html">Sign in</a>.</p>
-         </div>
     </form>
-     <nav class="end">
-            <figure  class="position">
-                <a href="https://www.facebook.com/hmpolskahm/?brand_redir=1500573333514248">
-                        <img src="img/face1.png" alt="facebook" class="icon" >
-                </a>
-                <a href="https://twitter.com/hmusa">
-                    <img src="img/twi.jpg" alt="twitter" class="icon">
-                </a>
-                <a href="https://www.instagram.com/hm/">
-                    <img src="img/insta1.png" alt="instagram" class="icon">
-                </a>
-                <a href="https://www.youtube.com/user/hennesandmauritz">
-                    <img src="img/you.png" alt="youtube" class="icon">
-                </a>
-                <a href="https://www.pinterest.com/hm/?autologin=true">
-                    <img src="img/pi.png" alt="pinterest" class="icon">
-                </a>
+    <nav class="end">
+        <figure class="position">
+            <a href="https://www.facebook.com/hmpolskahm/?brand_redir=1500573333514248">
+                <img src="img/face1.png" alt="facebook" class="icon">
+            </a>
+            <a href="https://twitter.com/hmusa">
+                <img src="img/twi.jpg" alt="twitter" class="icon">
+            </a>
+            <a href="https://www.instagram.com/hm/">
+                <img src="img/insta1.png" alt="instagram" class="icon">
+            </a>
+            <a href="https://www.youtube.com/user/hennesandmauritz">
+                <img src="img/you.png" alt="youtube" class="icon">
+            </a>
+            <a href="https://www.pinterest.com/hm/?autologin=true">
+                <img src="img/pi.png" alt="pinterest" class="icon">
+            </a>
 
-            </figure>
+        </figure>
     </nav>
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartLabel"><b>Cart</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-product-list-container"></div>
+                    <hr>
+                    <div class="container">
+                        <form>
+                            <div class="form-group row">
+                                <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                                <input class="form-control col-8" type="text" id="client-name" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                                <input class="form-control col-8" type="email" id="client-email" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    <button class="btn btn-dark order">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalProductInfo" tabindex="-1" role="dialog" aria-labelledby="modalProductInfoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProductInfoTitle"><b>Sign in</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-product-list-container"></div>
+                    <hr>
+                    <div class="container">
+                        <form method="POST" action="https://formspree.io/sofochka4996@ukr.net">
+                            <div class="form-group row">
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                <button type="submit" class="registerbtn">Sign in</button>
+                                <div class="container signin">
+                                    <p>Don't have an account ? <a href="login.html">Registration</a>.</p>
+                                </div>
+                        </form>
+                        </div>
 
-    <script src="js/javascript.js"></script>
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                        <script defer src="js/cart.js"></script>
+                        <script defer src="js/product-list.js"></script>
+                        <script defer src="js/index.js"></script>
 </body>
+
 </html>
