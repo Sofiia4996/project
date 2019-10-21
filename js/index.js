@@ -4,3 +4,8 @@ const productList = new ProductList(
   $('.products-container'),
   cart
 );
+const productmenList = new ProductmenList(
+  'productsmen.json',
+  $('.productsmen-container'),
+  cart
+);

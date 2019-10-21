@@ -3,14 +3,14 @@
         "id": "1",
         "title": "Shirt Dress with Tie Belt",
         "image": "dress.jpg",
-        "description": "Calf-length dress in soft, gently draped viscose twill. Collar, buttons at front, yoke at back, and removable tie belt at waist. Long sleeves with buttons at cuffs. Unlined",
+        "description": "Calf-length dress in soft, gently draped viscose twill. Long sleeves with buttons at cuffs.",
         "price": 29.99
     },
     {
         "id": "2",
         "title": "Patterned Dress",
         "image": "dress2.jpg",
-        "description": "Calf-length, straight-cut dress in woven, crêped fabric. Round neckline, opening at back of neck with covered button, and long sleeves with covered button at cuffs. Gathered seam at waist and skirt with ruffle at hem. Unlined.",
+        "description": "Calf-length, straight-cut dress in woven, crêped fabric. Round neckline, opening at back of neck with covered button.",
         "price": 34.99
     },
     {
@@ -45,7 +45,7 @@
         "id": "7",
         "title": "Double-breasted Belted Jacket",
         "image": "jacket.jpg",
-        "description": "Fitted, double-breasted jacket in woven fabric with a brushed finish. Pointed lapels, welt front pockets. and long sleeves with decorative buttons at cuffs.Vent at back. Lined.",
+        "description": "Fitted, double-breasted jacket in woven fabric with a brushed finish.",
         "price": 59.99
     },
     {
